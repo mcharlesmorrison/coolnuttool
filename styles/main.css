@@ -29,12 +29,10 @@ body {
   display: flex;                   /* Use flexbox for centering */
   justify-content: center;         /* Center content horizontally */
   align-items: center;             /* Center content vertically */
+  font-size: 36px;                 /* Set a larger font size for the title */
+
 }
 
-.header-logo {
-  width: 100px;
-  margin-top: 3px;
-}
 
 .header-links {
   margin-left: 0;                  /* Remove margin left if needed */
@@ -101,18 +99,36 @@ main {
   margin-top: 20px;
 }
 
-img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0;
+.main-text {
+  text-align: center;
+  color: white; /* Adjust text color as needed */
+  font-size: 24px; /* Adjust font size */
+  margin-bottom: 20px; /* Space between text and image */
 }
 
-.shop_image {
+.centered-image {
   display: block;
   margin: 0 auto;
-  width: 40%;
+  width: 60%; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
 }
+
+.shop-button {
+  display: inline-block;
+  background-color: #eda766ff; /* Button background color */
+  color: black; /* Button text color */
+  padding: 10px 20px; /* Button padding */
+  border-radius: 25px; /* Rounded corners */
+  text-align: center;
+  text-decoration: none; /* No underline */
+  font-size: 18px; /* Button text size */
+  margin-top: 20px; /* Space above the button */
+}
+
+.shop-button:hover {
+  background-color: #f5b34d; /* Change color on hover */
+}
+
 
 /* More existing styles here */
 
