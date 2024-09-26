@@ -2,6 +2,8 @@
 
 html {
   font-family: 'Roboto Mono';
+  color: #eda766ff; /* Text color */
+  background-color: #3e616cff; /* Background color */
 }
 
 header {
@@ -20,8 +22,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 20px 10px; */
-  /* margin-top: 10px; */
 }
 
 .header-logo {
@@ -70,22 +70,21 @@ main {
   align-items: center;
   margin-left: -10px;
   margin-right: -10px;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
-  position: relative; /* Add relative positioning */
+  overflow-x: hidden;
+  position: relative;
 }
 
 .normal-text {
   position: absolute;
   top: 55%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+  transform: translate(-50%, -50%);
   color: white;
   font-size: 30px;
   width: 80%;
   text-align: center;
   margin-top: 20px;
 }
-
 
 img {
   width: 100%;
@@ -100,269 +99,17 @@ img {
   width: 40%;
 }
 
-.stripe-button-container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
+/* More existing styles here */
+
+/* Media queries */
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+  /* Responsive adjustments */
 }
 
-
-.video-container {
-  position: relative;
-  width: 100%;
-  margin: 0 auto; /* Center the video horizontally */
-  padding-bottom: 56.25%; /* 16:9 aspect ratio (9 divided by 16 multiplied by 100) */
+/* Sub Page Formatting */
+.subPage {
+  color: #eda766ff; /* Text color */
 }
 
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.video-heading {
-  margin-bottom: 0px; /* Adjust the value as needed */
-}
-
-.subText-heading {
-  margin-bottom: -12px; /* Adjust the value as needed */
-}
-
-.shopText-heading {
-  font-size: 18px;
-  margin-bottom: -12px; /* Adjust the value as needed */
-}
-
-.external-links a {
-  margin-top: 30px;
-  margin: 0 10px;
-  text-decoration: none;
-  color: black;
-}
-
-  /* Media queries */
-  /* For screens smaller than 600px */
-  @media (max-width: 600px) {
-    header {
-      font-size: 12px; /* Decrease the font size for the header */
-      height: 60px; /* Adjust the height as needed */
-    }
-
-    .header-container {
-      height: 60px; /* Adjust the height as needed */
-    }
-
-    .header-logo {
-      width: 60px; /* Decrease the width of the logo */
-    }
-
-    .header-link {
-      font-size: 12px; /* Decrease the font size for the header links */
-    }
-    nav li {
-      margin: 0 5px;
-    }
-    .content-container {
-    align-items: flex-start; /* Adjust alignment for mobile view */
-    justify-content: flex-start; /* Adjust alignment for mobile view */
-    }
-    .normal-text {
-      top: 60%; /* Adjust the vertical position */
-      font-size: 12px; /* Decrease the font size for mobile view */
-    }
-    .header-links ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      padding-bottom: 0px;
-      display: flex;
-    }
-  }
-  
-  /* For screens between 600px and 900px */
-  @media (min-width: 600px) and (max-width: 900px) {
-    header {
-      font-size: 36px;
-    }
-  
-    nav li {
-      margin: 0 10px;
-    }
-  }
-  
-  /* For screens larger than 900px */
-  @media (min-width: 900px) {
-    header {
-      font-size: 48px;
-      height: 100px; /* change this value to adjust the height of the header for large screens */
-    }
-  }
-   
-
-  /* Sub Page Formatting */
-  
-  .a-body {
-    margin-top: 0px; /* Adjust the value as needed */
-    margin-bottom: 30px;
-    color: black;
-    text-decoration: none;
-  }
-
-  .subPage {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    text-align: justify;
-    text-justify: inter-character;
-    justify-content: space-between;
-    width: 50%;
-    line-height: 1.5;
-    margin-left: 25%;
-  }
-  
-  .subPage p {
-    text-align: justify;
-    text-justify: inter-character;
-    line-height: 1.5;
-  }
-  
-  .pageTitle {
-    margin-bottom: 0;
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .subPage figure {
-    margin: 0;
-    margin-bottom: 20px;
-  }
-  
-  .subPage figcaption {
-    font-style: italic;
-    text-align: left;
-    margin-left: 0;
-  }
-  /* image stuff only applied to trip reports */
-  .subPage img {
-    width: 100%
-  }
-  
-
-  /* Form styling */
-
-  #fs-frm input,
-  #fs-frm select,
-  #fs-frm textarea,
-  #fs-frm fieldset,
-  #fs-frm optgroup,
-  #fs-frm label,
-  #fs-frm #card-element:disabled {
-    font-family: inherit;
-    font-size: 100%;
-    color: inherit;
-    border: none;
-    border-radius: 0;
-    display: block;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    margin-left: 1%;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-  }
-  #fs-frm label,
-  #fs-frm legend,
-  #fs-frm ::placeholder {
-    font-size: .825rem;
-    margin-bottom: .5rem;
-    padding-top: .2rem;
-    display: flex;
-    align-items: baseline;
-    margin-left: 1%;
-  }
-  
-  /* border, padding, margin, width */
-  #fs-frm input,
-  #fs-frm select,
-  #fs-frm textarea,
-  #fs-frm #card-element {
-    border: 1px solid rgba(0,0,0,0.2);
-    background-color: rgba(255,255,255,0.9);
-    padding: .75em 1rem;
-    margin-bottom: 1.5rem;
-    margin-left: 1%;
-  }
-  #fs-frm input:focus,
-  #fs-frm select:focus,
-  #fs-frm textarea:focus {
-    background-color: white;
-    outline-style: solid;
-    outline-width: thin;
-    outline-color: gray;
-    outline-offset: -1px;
-    margin-left: 1%;
-  }
-  #fs-frm [type="text"],
-  #fs-frm [type="email"],
-  #fs-frm [type="message"] {
-    width: 90%;
-  }
-  #fs-frm [type="button"],
-  #fs-frm [type="submit"],
-  #fs-frm [type="reset"] {
-    width: auto;
-    cursor: pointer;
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-    margin-left: 1%;
-  }
-  #fs-frm [type="button"]:focus,
-  #fs-frm [type="submit"]:focus,
-  #fs-frm [type="reset"]:focus {
-    outline: none;
-    margin-left: 1%;
-  }
-  #fs-frm [type="submit"],
-  #fs-frm [type="reset"] {
-    margin-bottom: 0;
-    margin-left: 1.8%; /* button position */
-  }
-  #fs-frm select {
-    text-transform: none;
-  }
-  
-  #fs-frm [type="checkbox"] {
-    -webkit-appearance: checkbox;
-    -moz-appearance: checkbox;
-    appearance: checkbox;
-    display: inline-block;
-    width: auto;
-    margin: 0 .5em 0 0 !important;
-  }
-  
-  #fs-frm [type="radio"] {
-    -webkit-appearance: radio;
-    -moz-appearance: radio;
-    appearance: radio;
-  }
-  
-  /* address, locale */
-  #fs-frm fieldset.locale input[name="city"],
-  #fs-frm fieldset.locale select[name="state"],
-  #fs-frm fieldset.locale input[name="postal-code"] {
-    display: inline;
-  }
-  #fs-frm fieldset.locale input[name="city"] {
-    width: 52%;
-  }
-  #fs-frm fieldset.locale select[name="state"],
-  #fs-frm fieldset.locale input[name="postal-code"] {
-    width: 20%;
-  }
-  #fs-frm fieldset.locale input[name="city"],
-  #fs-frm fieldset.locale select[name="state"] {
-    margin-right: 3%;
-  }
+/* Additional styles */
