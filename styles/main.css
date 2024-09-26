@@ -7,8 +7,8 @@ html {
 }
 
 header {
-  background-color: white;
-  border-bottom: 2px solid #ddd;
+  background-color: #3e616cff;
+  /* border-bottom: 2px solid #ddd; */
   padding-left: 10px;
   padding-bottom: 0px;
   padding-top: 0px;
@@ -22,6 +22,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.header-title {
+  flex-grow: 1;                    /* Allow this div to take available space */
+  display: flex;                   /* Use flexbox for centering */
+  justify-content: center;         /* Center content horizontally */
+  align-items: center;             /* Center content vertically */
 }
 
 .header-logo {
@@ -38,7 +45,7 @@ body {
 }
 
 .header-links li {
-  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .header-link {
