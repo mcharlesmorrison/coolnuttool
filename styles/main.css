@@ -29,7 +29,7 @@ body {
   display: flex;                   /* Use flexbox for centering */
   justify-content: center;         /* Center content horizontally */
   align-items: center;             /* Center content vertically */
-  font-size: 36px;                 /* Set a larger font size for the title */
+  font-size: 60px;                 /* Set a larger font size for the title */
 
 }
 
