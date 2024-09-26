@@ -36,22 +36,30 @@ body {
   margin-top: 3px;
 }
 
+.header-links {
+  margin-left: 0;                  /* Remove margin left if needed */
+}
+
 .header-links ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 12px;
-  display: flex;
+  list-style: none;                /* Remove list bullets */
+  display: flex;                   /* Use flexbox for horizontal layout */
+  padding: 0;                      /* Remove default padding */
+  margin: 0;                       /* Remove default margin */
 }
 
 .header-links li {
-  margin-left: 20px;
+  margin-right: 20px;              /* Add space between links */
 }
 
 .header-link {
-  font-size: 20px;
-  text-decoration: none;
-  color: black;
+  font-size: 20px;                 /* Set font size for links */
+  text-decoration: none;           /* Remove underline from links */
+  color: #eda766ff;                    /* Set link color */
+  transition: color 0.3s;          /* Optional: Smooth color transition on hover */
+}
+
+.header-link:hover {
+  color: rgb(239, 137, 41);                /* Change color on hover */
 }
 
 .main-content {
