@@ -29,7 +29,7 @@ body {
   display: flex;                   /* Use flexbox for centering */
   justify-content: center;         /* Center content horizontally */
   align-items: center;             /* Center content vertically */
-  font-size: 60px;                 /* Set a larger font size for the title */
+  font-size: 18px;                 /* Set a larger font size for the title */
 
 }
 
@@ -79,38 +79,33 @@ main {
 
 .content-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row; /* Row layout to have text on the left and image on the right */
+  justify-content: flex-start; /* Align content to the start (left) */
+  align-items: center; /* Vertically center both items */
   margin-left: -10px;
   margin-right: -10px;
   overflow-x: hidden;
   position: relative;
 }
 
-.normal-text {
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 30px;
-  width: 80%;
-  text-align: center;
-  margin-top: 20px;
+.text-and-button {
+  display: flex;
+  flex-direction: column; /* Stack the text and button vertically */
+  align-items: flex-start; /* Align the text and button to the left */
+  margin-right: 20px; /* Add space between the text/button and the image */
 }
 
 .main-text {
-  text-align: center;
-  color: white; /* Adjust text color as needed */
-  font-size: 24px; /* Adjust font size */
-  margin-bottom: 20px; /* Space between text and image */
+  text-align: left; /* Align text to the left */
+  color: #dbdeeaff; /* Adjust text color as needed */
+  font-size: 20px; /* Adjust font size */
+  margin-bottom: 20px; /* Space between the text and the button */
 }
 
 .centered-image {
-  display: block;
-  margin: 0 auto;
   width: 60%; /* Adjust width as needed */
   height: auto; /* Maintain aspect ratio */
+  margin-left: auto; /* Keep the image on the right */
 }
 
 .shop-button {
@@ -122,13 +117,12 @@ main {
   text-align: center;
   text-decoration: none; /* No underline */
   font-size: 18px; /* Button text size */
-  margin-top: 20px; /* Space above the button */
+  margin-top: 10px; /* Space between the button and the text */
 }
 
 .shop-button:hover {
-  background-color: #f5b34d; /* Change color on hover */
+  color: rgb(239, 137, 41);  /* Change color on hover */
 }
-
 
 /* More existing styles here */
 
