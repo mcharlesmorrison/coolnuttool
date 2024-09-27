@@ -77,13 +77,13 @@ main {
   margin-bottom: 0;
 }
 
+/* Updated content container with more space around */
 .content-container {
   display: flex;
-  flex-direction: row; /* Row layout to have text on the left and image on the right */
+  flex-direction: row; /* Row layout for text on the left and image on the right */
   justify-content: flex-start; /* Align content to the start (left) */
   align-items: center; /* Vertically center both items */
-  margin-left: -10px;
-  margin-right: -10px;
+  padding: 0 50px; /* Add padding to the sides for margin */
   overflow-x: hidden;
   position: relative;
 }
@@ -92,18 +92,20 @@ main {
   display: flex;
   flex-direction: column; /* Stack the text and button vertically */
   align-items: flex-start; /* Align the text and button to the left */
-  margin-right: 20px; /* Add space between the text/button and the image */
+  margin-right: 30px; /* Add space between the text/button and the image */
 }
 
 .main-text {
   text-align: left; /* Align text to the left */
-  color: #dbdeeaff; /* Adjust text color as needed */
-  font-size: 20px; /* Adjust font size */
-  margin-bottom: 20px; /* Space between the text and the button */
+  color: #dbdeeaff; /* Adjust text color */
+  font-size: 30px; /* Adjust font size */
+  line-height: 1.2; /* Space between lines */
+  margin-bottom: 20px; /* Space between text and the button */
 }
 
+/* Make the image smaller */
 .centered-image {
-  width: 60%; /* Adjust width as needed */
+  width: 30%; /* Adjust width to make the image smaller */
   height: auto; /* Maintain aspect ratio */
   margin-left: auto; /* Keep the image on the right */
 }
@@ -117,12 +119,22 @@ main {
   text-align: center;
   text-decoration: none; /* No underline */
   font-size: 18px; /* Button text size */
-  margin-top: 10px; /* Space between the button and the text */
+  margin-top: 10px; /* Space between button and text */
 }
 
 .shop-button:hover {
-  color: rgb(239, 137, 41);  /* Change color on hover */
+  background-color: rgb(239, 137, 41); /* New background color on hover */
+  color: black; /* Keep the text color unchanged */
 }
+
+/* Ensure header is unaffected by these changes */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px; /* Add padding to sides for consistency */
+}
+
 
 /* More existing styles here */
 
