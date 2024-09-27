@@ -29,6 +29,8 @@ body {
   flex-grow: 0; /* Do not take up extra space */
   display: block; /* No flexbox centering needed */
   margin-right: auto; /* Ensure it sticks to the left */
+  font-size: 18px;
+
 }
 
 
@@ -81,7 +83,7 @@ main {
   flex-direction: row; /* Row layout for text on the left and image on the right */
   justify-content: flex-start; /* Align content to the start (left) */
   align-items: center; /* Vertically center both items */
-  padding: 0 200px; /* Add padding to the sides for margin */
+  padding: 0 150px; /* Add padding to the sides for margin */
   overflow-x: hidden;
   position: relative;
 }
@@ -103,21 +105,23 @@ main {
 
 /* Make the image smaller */
 .centered-image {
-  width: 30%; /* Adjust width to make the image smaller */
+  width: 45%; /* Adjust width to make the image smaller */
   height: auto; /* Maintain aspect ratio */
   margin-left: auto; /* Keep the image on the right */
+  margin: 60px 0 0 auto; /* Add top margin to move the image lower */
+
 }
 
 .shop-button {
   display: inline-block;
   background-color: #eda766ff; /* Button background color */
   color: black; /* Button text color */
-  padding: 20px 40px; /* Increase padding for a larger button */
+  padding: 20px 60px; /* Increase padding for a larger button */
   border-radius: 35px; /* Adjust for more rounded corners if desired */
   text-align: center;
   text-decoration: none; /* No underline */
-  font-size: 24px; /* Increase text size */
-  margin-top: 20px; /* Space above the button */
+  font-size: 27px; /* Increase text size */
+  margin-top: -20px; /* Space above the button */
   cursor: pointer; /* Add a pointer cursor for better UX */
 }
 
