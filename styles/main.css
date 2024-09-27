@@ -20,17 +20,15 @@ body {
 
 .header-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center; /* Keep items vertically centered */
+  padding-left: 20px; /* Add padding to move the title slightly away from the edge */
 }
 
 .header-title {
-  flex-grow: 1;                    /* Allow this div to take available space */
-  display: flex;                   /* Use flexbox for centering */
-  justify-content: center;         /* Center content horizontally */
-  align-items: center;             /* Center content vertically */
-  font-size: 18px;                 /* Set a larger font size for the title */
-
+  flex-grow: 0; /* Do not take up extra space */
+  display: block; /* No flexbox centering needed */
+  margin-right: auto; /* Ensure it sticks to the left */
 }
 
 
@@ -83,7 +81,7 @@ main {
   flex-direction: row; /* Row layout for text on the left and image on the right */
   justify-content: flex-start; /* Align content to the start (left) */
   align-items: center; /* Vertically center both items */
-  padding: 0 50px; /* Add padding to the sides for margin */
+  padding: 0 200px; /* Add padding to the sides for margin */
   overflow-x: hidden;
   position: relative;
 }
@@ -114,12 +112,13 @@ main {
   display: inline-block;
   background-color: #eda766ff; /* Button background color */
   color: black; /* Button text color */
-  padding: 10px 20px; /* Button padding */
-  border-radius: 25px; /* Rounded corners */
+  padding: 20px 40px; /* Increase padding for a larger button */
+  border-radius: 35px; /* Adjust for more rounded corners if desired */
   text-align: center;
   text-decoration: none; /* No underline */
-  font-size: 18px; /* Button text size */
-  margin-top: 10px; /* Space between button and text */
+  font-size: 24px; /* Increase text size */
+  margin-top: 20px; /* Space above the button */
+  cursor: pointer; /* Add a pointer cursor for better UX */
 }
 
 .shop-button:hover {
