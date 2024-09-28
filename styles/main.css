@@ -153,3 +153,13 @@ main {
 }
 
 /* Additional styles */
+
+.header-title-link {
+    text-decoration: none;
+    color: #eda766ff;
+    transition: color 0.3s;
+}
+
+.header-title-link:hover {
+    color: rgb(239, 137, 41);
+}
