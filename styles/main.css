@@ -14,17 +14,18 @@
   }
 
   .header-links ul {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
   }
 
   .header-links li {
-    margin-right: 0;
-    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-bottom: 0;
   }
 
   .header-links li:last-child {
-    margin-bottom: 0;
+    margin-right: 0;
   }
 }
 
