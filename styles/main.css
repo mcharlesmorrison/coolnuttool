@@ -107,7 +107,8 @@ main {
   flex-direction: row; /* Row layout for text on the left and image on the right */
   justify-content: flex-start; /* Align content to the start (left) */
   align-items: center; /* Vertically center both items */
-  padding: 0 45px 0 100px; /* Further reduce right padding */  overflow-x: hidden;
+  padding: 0 45px 0 100px; /* Further reduce right padding */
+  overflow-x: hidden;
   position: relative;
 }
 
@@ -117,7 +118,6 @@ main {
   align-items: flex-start; /* Align the text and button to the left */
   margin-right: 30px; /* Add space between the text/button and the image */
   width: 50%; /* Limit the text to 50% of the screen width */
-
 }
 
 .main-text {
@@ -126,7 +126,6 @@ main {
   font-size: 30px; /* Adjust font size */
   line-height: 1.2; /* Space between lines */
   margin-bottom: 20px; /* Space between text and the button */
-
 }
 
 /* Make the image smaller */
@@ -135,7 +134,31 @@ main {
   height: auto; /* Maintain aspect ratio */
   margin-left: auto; /* Keep the image on the right */
   margin: 60px 0 0 auto; /* Add top margin to move the image lower */
+}
 
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column; /* Stack elements vertically on mobile */
+    padding: 0 20px; /* Adjust padding for mobile */
+  }
+
+  .text-and-button {
+    width: 100%; /* Full width on mobile */
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 30px; /* Add space between text/button and image */
+    align-items: center; /* Center align text and button on mobile */
+  }
+
+  .main-text {
+    text-align: center; /* Center text on mobile */
+    font-size: 24px; /* Slightly smaller font size for mobile */
+  }
+
+  .centered-image {
+    width: 100%; /* Full width image on mobile */
+    margin: 0; /* Remove margins */
+  }
 }
 
 .shop-button {
