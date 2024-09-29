@@ -258,7 +258,14 @@ main {
 
 .product-details li {
     margin-bottom: 10px;
-    text-align: left; /* Aligns list items to the left */
+    text-align: center; /* Centers list items */
+}
+
+.text-tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .image-tile img {
