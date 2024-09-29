@@ -277,6 +277,9 @@ main {
 .image-tile {
     position: relative;
     overflow: hidden;
+    text-decoration: none; /* Add this line */
+    color: inherit; /* Add this line */
+    display: block; /* Add this line */
 }
 
 .image-tile img {
