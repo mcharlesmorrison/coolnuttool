@@ -239,33 +239,31 @@ main {
 .text-tile {
     text-align: left;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Change from center to flex-start */
+    align-items: flex-start; /* Change from center to flex-start */
 }
 
 .product-title {
     color: #3e616cff; /* Blue color */
     text-decoration: underline;
     margin-bottom: 15px;
-    display: block; /* Ensures the title is on its own line */
-    text-align: center; /* Centers the title */
+    display: block;
+    text-align: left; /* Change from center to left */
 }
 
 .product-details {
     color: white;
     list-style-type: none;
     padding: 0;
-    margin-top: 15px; /* Adds space between title and details */
+    margin-top: 15px;
+    width: 100%; /* Ensure the list takes full width of the tile */
 }
 
 .product-details li {
     margin-bottom: 10px;
-    text-align: center; /* Centers list items */
-}
-
-.text-tile {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: left; /* Change from center to left */
 }
 
 .image-tile img {
