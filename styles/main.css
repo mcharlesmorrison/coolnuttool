@@ -83,8 +83,7 @@ main {
   flex-direction: row; /* Row layout for text on the left and image on the right */
   justify-content: flex-start; /* Align content to the start (left) */
   align-items: center; /* Vertically center both items */
-  padding: 0 150px; /* Add padding to the sides for margin */
-  overflow-x: hidden;
+  padding: 0 100px 0 150px; /* Further reduce right padding */  overflow-x: hidden;
   position: relative;
 }
 
