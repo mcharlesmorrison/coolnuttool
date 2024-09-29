@@ -38,63 +38,16 @@ header {
   padding-top: 0px;
 }
 
-body {
-  margin: 0;
-}
-
-.header-container {
-  display: flex;
-  justify-content: flex-start; /* Align items to the left */
-  align-items: center; /* Keep items vertically centered */
-  padding-left: 20px; /* Add padding to move the title slightly away from the edge */
-}
-
-.header-title {
-  flex-grow: 0; /* Do not take up extra space */
-  display: block; /* No flexbox centering needed */
-  margin-right: auto; /* Ensure it sticks to the left */
-  font-size: 18px;
-
-}
-
-
-.header-links {
-  margin-left: 0;                  /* Remove margin left if needed */
-}
-
-.header-links ul {
-  list-style: none;                /* Remove list bullets */
-  display: flex;                   /* Use flexbox for horizontal layout */
-  padding: 0;                      /* Remove default padding */
-  margin: 0;                       /* Remove default margin */
-}
-
-.header-links li {
-  margin-right: 20px;              /* Add space between links */
-}
-
-.header-link {
-  font-size: 20px;                 /* Set font size for links */
-  text-decoration: none;           /* Remove underline from links */
-  color: #eda766ff;                    /* Set link color */
-  transition: color 0.3s;          /* Optional: Smooth color transition on hover */
-}
-
-.header-link:hover {
-  color: rgb(239, 137, 41);                /* Change color on hover */
-}
-
-.main-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 50px;
-  margin-top: 100px;
-  width: 100%;
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 main {
   margin-bottom: 60px;
+  display: flex;
+  height: calc(100vh - 60px); /* Adjust 60px to match your header height */
 }
 
 .no-margin {
@@ -103,11 +56,12 @@ main {
 
 /* Updated content container with more space around */
 .content-container {
+  flex: 1;
   display: flex;
-  flex-direction: row; /* Row layout for text on the left and image on the right */
-  justify-content: flex-start; /* Align content to the start (left) */
-  align-items: center; /* Vertically center both items */
-  padding: 0 45px 0 150px; /* Further reduce right padding */  overflow-x: hidden;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 150px;
+  overflow-x: hidden;
   position: relative;
 }
 
@@ -116,6 +70,7 @@ main {
   flex-direction: column; /* Stack the text and button vertically */
   align-items: flex-start; /* Align the text and button to the left */
   margin-right: 30px; /* Add space between the text/button and the image */
+  max-width: 50%;
 }
 
 .main-text {
@@ -161,7 +116,6 @@ main {
   padding: 0 50px; /* Add padding to sides for consistency */
 }
 
-
 /* More existing styles here */
 
 /* Media queries */
@@ -185,4 +139,19 @@ main {
 
 .header-title-link:hover {
     color: rgb(239, 137, 41);
+}
+
+.image-container {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.full-height-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: auto;
+    object-fit: cover;
 }
