@@ -326,6 +326,14 @@ main {
     padding: 40px;
 }
 
+.about-title {
+  color: #eda766ff; /* Blue color */
+  text-decoration: underline;
+  margin-bottom: 15px;
+  display: block;
+  text-align: left; /* Change from center to left */
+}
+
 .about-text {
     width: 50%;
     padding-right: 40px;
