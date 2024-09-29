@@ -79,6 +79,8 @@ main {
   font-size: 30px; /* Adjust font size */
   line-height: 1.2; /* Space between lines */
   margin-bottom: 20px; /* Space between text and the button */
+  max-width: 70%; /* Limit the width to 70% of its container */
+  width: 100%; /* Ensure it takes full width up to the max-width */
 }
 
 /* Make the image smaller */
@@ -87,7 +89,26 @@ main {
   height: auto; /* Maintain aspect ratio */
   margin-left: auto; /* Keep the image on the right */
   margin: 60px 0 0 auto; /* Add top margin to move the image lower */
+}
 
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .main-text {
+    max-width: 100%;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .centered-image {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 .shop-button {
@@ -141,17 +162,3 @@ main {
     color: rgb(239, 137, 41);
 }
 
-.image-container {
-    flex: 1;
-    position: relative;
-    overflow: hidden;
-}
-
-.full-height-image {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: auto;
-    object-fit: cover;
-}
