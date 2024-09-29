@@ -107,7 +107,7 @@ main {
   flex-direction: row; /* Row layout for text on the left and image on the right */
   justify-content: flex-start; /* Align content to the start (left) */
   align-items: center; /* Vertically center both items */
-  padding: 0 45px 0 150px; /* Further reduce right padding */  overflow-x: hidden;
+  padding: 0 45px 0 100px; /* Further reduce right padding */  overflow-x: hidden;
   position: relative;
 }
 
@@ -116,6 +116,8 @@ main {
   flex-direction: column; /* Stack the text and button vertically */
   align-items: flex-start; /* Align the text and button to the left */
   margin-right: 30px; /* Add space between the text/button and the image */
+  width: 50%; /* Limit the text to 50% of the screen width */
+
 }
 
 .main-text {
@@ -124,6 +126,7 @@ main {
   font-size: 30px; /* Adjust font size */
   line-height: 1.2; /* Space between lines */
   margin-bottom: 20px; /* Space between text and the button */
+
 }
 
 /* Make the image smaller */
