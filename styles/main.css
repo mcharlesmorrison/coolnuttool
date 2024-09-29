@@ -323,24 +323,26 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 40px;
+    width: 80%; /* Match the width of shop-grid */
+    margin: 40px auto; /* Center the container and add vertical margin */
+    padding: 0; /* Remove padding */
 }
 
 .about-title {
-  color: #eda766ff; /* Blue color */
-  text-decoration: underline;
-  margin-bottom: 15px;
-  display: block;
-  text-align: left; /* Change from center to left */
+    color: #eda766ff; /* Blue color */
+    text-decoration: underline;
+    margin-bottom: 15px;
+    display: block;
+    text-align: left; /* Change from center to left */
 }
 
 .about-text {
-    width: 50%;
-    padding-right: 40px;
+    width: 48%; /* Adjust width to allow for some space between text and image */
+    padding-right: 2%; /* Add a small padding between text and image */
 }
 
 .about-image {
-    width: 50%;
+    width: 48%; /* Match the text width */
 }
 
 .about-image img {
@@ -352,8 +354,9 @@ main {
 /* Responsive adjustments for about page */
 @media (max-width: 768px) {
     .about-container {
-        flex-direction: column-reverse;
-        padding: 20px;
+        width: 90%; /* Match the mobile width of shop-grid */
+        flex-direction: column;
+        margin: 20px auto; /* Adjust margin for mobile */
     }
 
     .about-text, .about-image {
@@ -361,7 +364,12 @@ main {
         padding-right: 0;
     }
 
-    .about-image {
+    .about-text {
+        order: 1;
         margin-bottom: 20px;
+    }
+
+    .about-image {
+        order: 2;
     }
 }
