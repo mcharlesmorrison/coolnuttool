@@ -83,7 +83,7 @@ main {
   flex-direction: row; /* Row layout for text on the left and image on the right */
   justify-content: flex-start; /* Align content to the start (left) */
   align-items: center; /* Vertically center both items */
-  padding: 0 100px 0 150px; /* Further reduce right padding */  overflow-x: hidden;
+  padding: 0 45px 0 150px; /* Further reduce right padding */  overflow-x: hidden;
   position: relative;
 }
 
@@ -104,7 +104,7 @@ main {
 
 /* Make the image smaller */
 .centered-image {
-  width: 45%; /* Adjust width to make the image smaller */
+  width: 50%; /* Adjust width to make the image smaller */
   height: auto; /* Maintain aspect ratio */
   margin-left: auto; /* Keep the image on the right */
   margin: 60px 0 0 auto; /* Add top margin to move the image lower */
