@@ -1,4 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+@media screen and (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .header-title {
+    margin-bottom: 10px;
+  }
+
+  .header-links ul {
+    flex-direction: column;
+  }
+
+  .header-links li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .header-links li:last-child {
+    margin-bottom: 0;
+  }
+}
 
 html {
   font-family: 'Roboto Mono';
