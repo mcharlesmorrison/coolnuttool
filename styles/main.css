@@ -222,8 +222,8 @@ main {
 .shop-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    width: 75%;
+    gap: 30px;
+    width: 80%;
     margin: 40px auto;
 }
 
@@ -237,10 +237,24 @@ main {
 }
 
 .text-tile {
-    font-size: 24px;
-    color: #3e616cff;
-    text-align: center;
+    text-align: left;
     padding: 20px;
+}
+
+.product-title {
+    color: #0000FF; /* Blue color */
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+
+.product-details {
+    color: white;
+    list-style-type: none;
+    padding: 0;
+}
+
+.product-details li {
+    margin-bottom: 10px;
 }
 
 .image-tile img {
