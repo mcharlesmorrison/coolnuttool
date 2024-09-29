@@ -2,7 +2,7 @@ import os
 from PIL import Image
 
 
-def compress_images(directory=None, quality=70):
+def compress_images(directory=None, quality=50):
     directory = "/Users/mattmorrison/Desktop/" + directory
     if directory is None:
         directory = os.getcwd()
@@ -24,9 +24,7 @@ def compress_images(directory=None, quality=70):
 
 
 def main():
-    print(compress_images("tenaya"))
-    print(compress_images("florence"))
-    print(compress_images("warrenNorth"))
+    print(compress_images("website"))
 
 
 if __name__ == "__main__":
