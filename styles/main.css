@@ -279,7 +279,7 @@ main {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 4px;
 }
 
 .product-info:hover {
@@ -303,7 +303,7 @@ main {
 .swatches {
     display: flex;
     gap: 10px;
-    margin: 0;
+    margin: 6px 0 0 0;
 }
 
 .swatch {
@@ -441,6 +441,59 @@ main {
 /* Footer */
 footer {
     height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-link {
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.45);
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: rgba(0, 0, 0, 0.55);
+}
+
+/* Terms Page */
+.terms-container {
+    width: 60%;
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+.terms-title {
+    font-size: 23px;
+    font-weight: 400;
+    margin: 0 0 6px 0;
+}
+
+.terms-updated {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.4);
+    margin: 0 0 30px 0;
+}
+
+.terms-heading {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 28px 0 8px 0;
+}
+
+.terms-text {
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0 0 8px 0;
+    line-height: 1.6;
+}
+
+.terms-list {
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0 0 8px 0;
+    padding-left: 20px;
+    line-height: 1.6;
 }
 
 /* Responsive adjustments */
@@ -499,6 +552,13 @@ footer {
 .product-detail-price {
     font-size: 21px;
     margin: 0;
+}
+
+.shipping-note {
+    font-size: 13px;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.55);
+    margin-left: 3px;
 }
 
 .product-detail-spec {

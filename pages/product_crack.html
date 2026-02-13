@@ -39,7 +39,7 @@
             </div>
             <div class="product-detail-info">
                 <h2 class="product-detail-name">cool nut tool - i love crack</h2>
-                <p class="product-detail-price">$29</p>
+                <p class="product-detail-price">$29 <span class="shipping-note">free shipping</span></p>
                 <p class="swatch-label">color</p>
                 <div class="swatches">
                     <button class="swatch is-selected" style="--swatch: #B13CAD" data-variant="p_edebe4" data-href="https://buy.stripe.com/bJe28s0wjgH90jtdTO3gk0b" aria-label="Purple"></button>
@@ -56,7 +56,9 @@
             <img src="../image/img_web/457974_0009.webp" alt="">
         </div>
     </main>
-    <footer></footer>
+    <footer>
+        <a href="terms.html" class="footer-link">terms of use</a>
+    </footer>
 
     <script>
     document.querySelectorAll('.swatch').forEach(btn => {
@@ -71,6 +73,13 @@
             btn.classList.add('is-selected');
         });
     });
+
+    const params = new URLSearchParams(window.location.search);
+    const color = params.get('color');
+    if (color === 'g') {
+        const goldSwatch = document.querySelector('.swatch[data-variant^="g"]');
+        if (goldSwatch) goldSwatch.click();
+    }
     </script>
 </body>
 </html>

@@ -51,7 +51,7 @@
             <div class="product-card">
                 <a href="product_crack.html" class="shop-tile image-tile">
                     <img src="../image/product/crack_p_edebe4.jpeg" alt="I Love Crack Nut Tool">
-                    <div class="hover-text">I love crack<br>nut tool</div>
+                    <div class="hover-text">i love crack<br>nut tool</div>
                 </a>
                 <a href="product_crack.html" class="product-info">
                     <span class="product-name">cool nut tool - i love crack</span>
@@ -108,10 +108,16 @@
                 img.src = img.src.replace(/_[pg]_[a-f0-9]+\.jpeg/, `_${variant}.jpeg`);
                 card.querySelectorAll('.swatch').forEach(s => s.classList.remove('is-selected'));
                 btn.classList.add('is-selected');
+                const color = variant.startsWith('g') ? 'g' : 'p';
+                card.querySelectorAll('a').forEach(a => {
+                    a.href = a.href.split('?')[0] + '?color=' + color;
+                });
             });
         });
         </script>
     </main>
-    <footer></footer>
+    <footer>
+        <a href="terms.html" class="footer-link">terms of use</a>
+    </footer>
 </body>
 </html>
