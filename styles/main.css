@@ -599,9 +599,9 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: 80%; /* Match the width of shop-grid */
-    margin: 40px auto; /* Center the container and add vertical margin */
-    padding: 0; /* Remove padding */
+    width: 80%;
+    margin: 40px auto;
+    padding: 0;
 }
 
 .about-title {
@@ -618,19 +618,15 @@ footer {
 }
 
 .about-image {
-    width: 48%; /* Match the text width */
-
-
+    width: 48%;
+    clip-path: inset(0 round 15px);
 }
 
 .about-image img {
     width: 100%;
     height: auto;
-    object-fit: cover;
-    border-radius: 15px;
-    /* box-shadow: 0 20px 40px rgba(0,0,0,0.08); */
+    display: block;
     filter: saturate(90%);
-
 }
 
 /* Responsive adjustments for about page */
