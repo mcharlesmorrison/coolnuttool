@@ -34,28 +34,84 @@
     </header>
     <main class="no-margin">
         <div class="shop-grid">
-            <a href="#" class="shop-tile image-tile">
-                <!-- <img src="../image/product/send_it_g.jpeg" alt="Product 0"> -->
-                <img src="../image/product/send_it_p.jpeg" alt="Product 0">
-                <div class="hover-text">buy send it<br>nut tool</div>
-            </a>
-            <a href="https://buy.stripe.com/00g9Cv8T5gGKapqbIN" class="shop-tile image-tile">
-                <!-- <img src="../image/product/crack_g.jpeg" alt="Product 1"> -->
-                <img src="../image/product/crack_p.jpeg" alt="Product 1">
-
-                <div class="hover-text">buy I love crack<br>nut tool</div>
-            </a>
-            <a href="https://buy.stripe.com/dR69Cv7P1duy412aEL" class="shop-tile image-tile">
-                <!-- <img src="../image/product/trad_dad_g.jpeg" alt="Product 2"> -->
-                <img src="../image/product/trad_dad_p.jpeg" alt="Product 2">
-                <div class="hover-text">buy trad dad<br>nut tool</div>
-            </a>
-            <a href="https://buy.stripe.com/aEUbKDfhtbmqbtu28e" class="shop-tile image-tile">
-                <!-- <img src="../image/product/trad_mom_g.jpeg" alt="Product 3"> -->
-                <img src="../image/product/trad_mom_p.jpeg" alt="Product 3">
-                <div class="hover-text">buy don't fall<br>nut tool</div>
-            </a>
+            <div class="product-card">
+                <a href="product_send_it.html" class="shop-tile image-tile">
+                    <img src="../image/product/send_it_p_edebe4.jpeg" alt="Send It Nut Tool">
+                    <div class="hover-text">send it<br>nut tool</div>
+                </a>
+                <a href="product_send_it.html" class="product-info">
+                    <span class="product-name">cool nut tool - send it!</span>
+                    <span class="product-price">$29</span>
+                </a>
+                <div class="swatches">
+                    <button class="swatch is-selected" style="--swatch: #B13CAD" data-variant="p_edebe4" aria-label="Purple"></button>
+                    <button class="swatch" style="--swatch: #C5A44E" data-variant="g_edebe4" aria-label="Gold"></button>
+                </div>
+            </div>
+            <div class="product-card">
+                <a href="product_crack.html" class="shop-tile image-tile">
+                    <img src="../image/product/crack_p_edebe4.jpeg" alt="I Love Crack Nut Tool">
+                    <div class="hover-text">I love crack<br>nut tool</div>
+                </a>
+                <a href="product_crack.html" class="product-info">
+                    <span class="product-name">cool nut tool - i love crack</span>
+                    <span class="product-price">$29</span>
+                </a>
+                <div class="swatches">
+                    <button class="swatch is-selected" style="--swatch: #B13CAD" data-variant="p_edebe4" aria-label="Purple"></button>
+                    <button class="swatch" style="--swatch: #C5A44E" data-variant="g_ebede4" aria-label="Gold"></button>
+                </div>
+            </div>
+            <div class="product-card">
+                <a href="product_trad_dad.html" class="shop-tile image-tile">
+                    <img src="../image/product/trad_dad_p_edebe4.jpeg" alt="Trad Dad Nut Tool">
+                    <div class="hover-text">trad dad<br>nut tool</div>
+                </a>
+                <a href="product_trad_dad.html" class="product-info">
+                    <span class="product-name">cool nut tool - trad dad</span>
+                    <span class="product-price">$29</span>
+                </a>
+                <div class="swatches">
+                    <button class="swatch is-selected" style="--swatch: #B13CAD" data-variant="p_edebe4" aria-label="Purple"></button>
+                    <button class="swatch" style="--swatch: #C5A44E" data-variant="g_edebe4" aria-label="Gold"></button>
+                </div>
+            </div>
+            <div class="product-card">
+                <a href="product_trad_mom.html" class="shop-tile image-tile">
+                    <img src="../image/product/trad_mom_p_edebe4.jpeg" alt="Don't Fall Nut Tool">
+                    <div class="hover-text">trad mom<br>nut tool</div>
+                </a>
+                <a href="product_trad_mom.html" class="product-info">
+                    <span class="product-name">cool nut tool - trad mom</span>
+                    <span class="product-price">$29</span>
+                </a>
+                <div class="swatches">
+                    <button class="swatch is-selected" style="--swatch: #B13CAD" data-variant="p_edebe4" aria-label="Purple"></button>
+                    <button class="swatch" style="--swatch: #C5A44E" data-variant="g_edebe4" aria-label="Gold"></button>
+                </div>
+            </div>
         </div>
+
+        <div class="shop-banner">
+            <!-- <img src="../image/img_web/06940021.webp" alt=""> -->
+            <!-- <img src="../image/img_web/457974_0009.webp" alt=""> -->
+            <img src="../image/img_web/06940013.webp" alt=""> 
+
+        </div>
+
+        <script>
+        document.querySelectorAll('.swatch').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const card = btn.closest('.product-card');
+                const img = card.querySelector('.shop-tile img');
+                const variant = btn.dataset.variant;
+                img.src = img.src.replace(/_[pg]_[a-f0-9]+\.jpeg/, `_${variant}.jpeg`);
+                card.querySelectorAll('.swatch').forEach(s => s.classList.remove('is-selected'));
+                btn.classList.add('is-selected');
+            });
+        });
+        </script>
     </main>
+    <footer></footer>
 </body>
 </html>

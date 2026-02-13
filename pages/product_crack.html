@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TC07WEKM04"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-TC07WEKM04');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Nut Tool - I Love Crack</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-title">
+                <a href="../index.html" class="header-title-link">
+                    <h1>cool nut tool</h1>
+                </a>
+            </div>
+            <div class="header-links">
+                <ul>
+                    <li><a class="header-link" href="../pages/shop.html">shop</a></li>
+                    <li><a class="header-link" href="../pages/about.html">info</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="no-margin">
+        <div class="product-detail">
+            <div class="product-detail-image">
+                <img src="../image/product/crack_p_edebe4.jpeg" alt="I Love Crack Nut Tool">
+            </div>
+            <div class="product-detail-info">
+                <h2 class="product-detail-name">cool nut tool - i love crack</h2>
+                <p class="product-detail-price">$29</p>
+                <p class="swatch-label">color</p>
+                <div class="swatches">
+                    <button class="swatch is-selected" style="--swatch: #B13CAD" data-variant="p_edebe4" data-href="https://buy.stripe.com/bJe28s0wjgH90jtdTO3gk0b" aria-label="Purple"></button>
+                    <button class="swatch" style="--swatch: #C5A44E" data-variant="g_ebede4" data-href="https://buy.stripe.com/dRm14o92P8aD3vFbLG3gk0c" aria-label="Gold"></button>
+                </div>
+                <a href="https://buy.stripe.com/bJe28s0wjgH90jtdTO3gk0b" class="shop-button product-buy-btn">Buy</a>
+                <div class="product-detail-specs">
+                    <p class="product-detail-spec">material: anodized 7075-T6 aluminum</p>
+                    <p class="product-detail-spec">weight: 45.6 grams</p>
+                </div>
+            </div>
+        </div>
+        <div class="shop-banner" style="margin-top: 80px;">
+            <img src="../image/img_web/457974_0009.webp" alt="">
+        </div>
+    </main>
+    <footer></footer>
+
+    <script>
+    document.querySelectorAll('.swatch').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const detail = btn.closest('.product-detail');
+            const img = detail.querySelector('.product-detail-image img');
+            const buyBtn = detail.querySelector('.product-buy-btn');
+            const variant = btn.dataset.variant;
+            img.src = img.src.replace(/_[pg]_[a-f0-9]+\.jpeg/, `_${variant}.jpeg`);
+            buyBtn.href = btn.dataset.href;
+            detail.querySelectorAll('.swatch').forEach(s => s.classList.remove('is-selected'));
+            btn.classList.add('is-selected');
+        });
+    });
+    </script>
+</body>
+</html>
