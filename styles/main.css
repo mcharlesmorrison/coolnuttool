@@ -31,12 +31,17 @@
 
 html {
   font-family: 'Roboto Mono';
-  color: #eda766ff; /* Text color */
-  background-color: #3e616cff; /* Background color */
+  color: #000000; /* Text color */
+  background-color: #f7f6f2; /* Background color */
+}
+
+:root{
+  --purple: #B13CAD;
+  --purple-hover: #9C3297;
 }
 
 header {
-  background-color: #3e616cff;
+  background-color: #f7f6f2;
   /* border-bottom: 2px solid #ddd; */
   padding-left: 10px;
   padding-bottom: 0px;
@@ -81,12 +86,16 @@ body {
 .header-link {
   font-size: 20px;                 /* Set font size for links */
   text-decoration: none;           /* Remove underline from links */
-  color: #eda766ff;                    /* Set link color */
+  color: #000000;                    /* Set link color */
   transition: color 0.3s;          /* Optional: Smooth color transition on hover */
 }
 
-.header-link:hover {
-  color: rgb(239, 137, 41);                /* Change color on hover */
+/* .header-link:hover {
+ color: #333333; 
+} */
+ 
+ .header-link:hover {
+  color: var(--purple);
 }
 
 .main-content {
@@ -127,7 +136,7 @@ main {
 
 .main-text {
   text-align: left; /* Align text to the left */
-  color: #dbdeeaff; /* Adjust text color */
+  color: #000000; /* Adjust text color */
   font-size: 30px; /* Adjust font size */
   line-height: 1.2; /* Space between lines */
   margin-bottom: 20px; /* Space between text and the button */
@@ -168,8 +177,8 @@ main {
 
 .shop-button {
   display: inline-block;
-  background-color: #eda766ff; /* Button background color */
-  color: black; /* Button text color */
+  background-color: var(--purple); /* Button background color */
+  color: white; /* Button text color */
   padding: 20px 60px; /* Increase padding for a larger button */
   border-radius: 35px; /* Adjust for more rounded corners if desired */
   text-align: center;
@@ -180,8 +189,8 @@ main {
 }
 
 .shop-button:hover {
-  background-color: rgb(239, 137, 41); /* New background color on hover */
-  color: black; /* Keep the text color unchanged */
+  background-color: var(--purple-hover);
+  color: white;
 }
 
 /* Ensure header is unaffected by these changes */
@@ -203,19 +212,19 @@ main {
 
 /* Sub Page Formatting */
 .subPage {
-  color: #eda766ff; /* Text color */
+  color: #000000; /* Text color */
 }
 
 /* Additional styles */
 
 .header-title-link {
     text-decoration: none;
-    color: #eda766ff;
+    color: #000000;
     transition: color 0.3s;
 }
 
 .header-title-link:hover {
-    color: rgb(239, 137, 41);
+    color: #333333;
 }
 
 /* Shop Grid Styles */
@@ -256,7 +265,7 @@ main {
 }
 
 .product-title {
-    color: #3e616cff; /* Blue color */
+    color: #000000;
     text-decoration: underline;
     margin-bottom: 15px;
     display: block;
@@ -264,7 +273,7 @@ main {
 }
 
 .product-details {
-    color: white;
+    color: #000000;
     list-style-type: none;
     padding: 0;
     margin-top: 15px;
@@ -331,7 +340,7 @@ main {
 }
 
 .about-title {
-    color: #eda766ff; /* Blue color */
+    color: #000000;
     text-decoration: underline;
     margin-bottom: 15px;
     display: block;
